@@ -74,7 +74,13 @@
  
  
  */
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self postRequestAllInfo];
 
+    
+}
 -(void)postRequestAllInfo
 {
     NSString *url =[[NSString alloc]initWithFormat:@"%@UserType/card/detailGet",BASEURL];
@@ -86,7 +92,7 @@
     [params setObject:appdelegate.cardInfo_dic[@"card_level"] forKey:@"cardLevel"];
     [params setObject:self.card_dic[@"card_code"] forKey:@"cardCode"];
     
-    
+   
     
     NSLog(@"---%@",appdelegate.cardInfo_dic);
     
@@ -144,7 +150,6 @@
     titles_array = @[@"我要续卡",@"我要升级",@"申请延期",@"我要预约",@"家庭共享",@"卡片转让",@"我要分享",@"投诉理赔"];
     imageNameArray=@[@"会员卡-续卡-2017",@"会员卡-升级-2017",@"会员卡-延期-2017",@"会员卡-预约-2017",@"会员卡-共享-2017",@"会员卡-转让-2017",@"会员卡-分享-2017",@"会员卡-理赔-2017"];
     
-    [self postRequestAllInfo];
 
     self.tabheaderView.frame = CGRectMake(13, 212*LZDScale-21, SCREENWIDTH-26, 99);
     
@@ -574,11 +579,11 @@
     if (claim_state.length==0){
         if ([cardInfo_dic[@"card_type"] isEqualToString:@"储值卡"]) {
             PUSH(MoneyPAYViewController)
-            vc.refresheDate = ^{
-                self.refresheDate();
-                
-                [self postRequestAllInfo];
-            };
+//            vc.refresheDate = ^{
+//                self.refresheDate();
+//                
+//                [self postRequestAllInfo];
+//            };
             
             vc.card_dic = cardInfo_dic;
             vc.user = self.card_dic[@"user"];
@@ -588,11 +593,11 @@
             
             PUSH(CountPAYViewController)
             vc.card_dic = cardInfo_dic;
-            vc.refresheDate = ^{
-                self.refresheDate();
-                
-                [self postRequestAllInfo];
-            };
+//            vc.refresheDate = ^{
+//                self.refresheDate();
+//                
+//                [self postRequestAllInfo];
+//            };
             vc.user = self.card_dic[@"user"];
             
         }

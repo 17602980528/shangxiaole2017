@@ -345,16 +345,16 @@
     
     
     
-    if ([dic[@"card_type"] isEqualToString:@"计次卡"]) {
-        pay_tp = @"计次数量";
-     
-        
-    }else{
+//    if ([dic[@"card_type"] isEqualToString:@"计次卡"]) {
+//        pay_tp = @"计次数量";
+//     
+//        
+//    }else{
         pay_tp = @"付款金额";
         
      
         
-    }
+//    }
     
     MyOrderDetailVC *VC  = [[MyOrderDetailVC alloc]init];
     VC.order_dic = [self.orderArray objectAtIndex:indexPath.row];
