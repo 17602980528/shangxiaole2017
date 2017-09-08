@@ -1047,6 +1047,7 @@
 		D9B8940A1F6239F200278B74 /* BaiduMapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D9B894091F6239F200278B74 /* BaiduMapViewController.mm */; };
 		D9B8940E1F624AB300278B74 /* 组-4-拷贝-5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B8940C1F624AB300278B74 /* 组-4-拷贝-5@3x.png */; };
 		D9B8940F1F624AB300278B74 /* 组-4-拷贝-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B8940D1F624AB300278B74 /* 组-4-拷贝-5@2x.png */; };
+		D9B894111F626FD000278B74 /* libbaiduNaviSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B894101F626FD000278B74 /* libbaiduNaviSDK.a */; };
 		D9B9231D1F26D447003AA113 /* CardmarketDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B9231C1F26D447003AA113 /* CardmarketDetailVC.xib */; };
 		D9B923221F271E32003AA113 /* AroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B923201F271E32003AA113 /* AroundViewController.m */; };
 		D9B923231F271E32003AA113 /* AroundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B923211F271E32003AA113 /* AroundViewController.xib */; };
@@ -2786,6 +2787,7 @@
 		D9B894091F6239F200278B74 /* BaiduMapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaiduMapViewController.mm; sourceTree = "<group>"; };
 		D9B8940C1F624AB300278B74 /* 组-4-拷贝-5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "组-4-拷贝-5@3x.png"; sourceTree = "<group>"; };
 		D9B8940D1F624AB300278B74 /* 组-4-拷贝-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "组-4-拷贝-5@2x.png"; sourceTree = "<group>"; };
+		D9B894101F626FD000278B74 /* libbaiduNaviSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbaiduNaviSDK.a; sourceTree = "<group>"; };
 		D9B9231C1F26D447003AA113 /* CardmarketDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardmarketDetailVC.xib; sourceTree = "<group>"; };
 		D9B9231F1F271E32003AA113 /* AroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AroundViewController.h; sourceTree = "<group>"; };
 		D9B923201F271E32003AA113 /* AroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AroundViewController.m; sourceTree = "<group>"; };
@@ -3012,6 +3014,7 @@
 				D94113541CE9A3D7008E231F /* AlipaySDK.framework in Frameworks */,
 				D94DF2661CAE6C7A000D5B69 /* CIA_SDK.framework in Frameworks */,
 				D94743A51CE5728000D1D3EE /* BaiduMapAPI_Search.framework in Frameworks */,
+				D9B894111F626FD000278B74 /* libbaiduNaviSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4656,6 +4659,7 @@
 		D90C4CCE1F612C0900B7E08A /* BaiduNaviSDK */ = {
 			isa = PBXGroup;
 			children = (
+				D9B894101F626FD000278B74 /* libbaiduNaviSDK.a */,
 				D90C4CCF1F612C0900B7E08A /* baiduNaviSDK.bundle */,
 				D90C4CD01F612C0900B7E08A /* baiduNaviSDK.xcassets */,
 				D90C4CD11F612C0900B7E08A /* inc */,
